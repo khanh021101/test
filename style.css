@@ -1,0 +1,100 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('anh1.jpg');  /* Đường dẫn đến ảnh nền */
+    background-size: 36%;  /* Đảm bảo ảnh phủ toàn bộ màn hình */
+    background-position: center center;  /* Căn giữa ảnh */
+    background-attachment: fixed;  /* Giữ ảnh nền cố định khi cuộn trang */
+}
+
+.container {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);  /* Màu nền của container với độ trong suốt */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+h1 {
+    text-align: center;
+    color: #333;
+}
+
+.question {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin: 5px 0;
+}
+
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.result {
+    margin-top: 25px;
+    text-align: center;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+/* Đảm bảo #controlPanel có display:flex và các nút sẽ nằm cạnh nhau */
+#controlPanel {
+    display: flex;
+    justify-content: space-between;  /* Giãn cách đều giữa các nút */
+    gap: 10px;  /* Khoảng cách giữa các nút */
+    margin-top: 20px;
+    width: 100%;
+    max-width: 500px;  /* Điều chỉnh để không bị tràn ngoài */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+button {
+    display: inline-block;  /* Đảm bảo các nút có thể hiển thị theo chiều ngang */
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+}
+
+/* Nút làm lại */
+#restartQuiz {
+    background-color: #17a2b8;  /* Màu nền cho nút làm lại */
+    color: white;
+}
+
+#restartQuiz:hover {
+    background-color: #138496;  /* Màu nền khi hover */
+}
+
+/* Nút nộp bài */
+#submitQuiz {
+    background-color: #28a745;  /* Màu nền cho nút nộp bài */
+    color: white;
+}
+
+#submitQuiz:hover {
+    background-color: #218838;  /* Màu nền khi hover */
+}
+
+button:focus {
+    outline: none;  /* Tắt viền khi nhấn nút */
+}
